@@ -1,0 +1,140 @@
+Part 2: ETL Pipeline Development 
+Objective: Build an ETL pipeline that extracts, transforms, and loads the generated data into a 
+relational database, addressing the data quality issues. 
+Requirements: 
+• Extract data from the generated CSV files. 
+• Perform data cleaning and transformations, including: 
+o Handling missing values appropriately (e.g., filling, dropping, or using default 
+values). 
+o Normalizing inconsistent data (e.g., standardizing category names). 
+o Correcting invalid data formats (e.g., fixing date formats, converting text prices to 
+numeric). 
+o De-duplicating customer records and resolving conflicts. 
+• Load the cleaned and transformed data into a relational database (PostgreSQL, MySQL, or 
+SQLite). 
+• Implement logging to capture data quality issues detected and actions taken during the ETL 
+process. 
+Deliverable: 
+- Submit the ETL script: data_creation.py , load_data.py
+- a sample log file : etl_pipeline.log
+- table creation scripts : 
+
+Part 3: Incremental Data Loading 
+Objective: Modify the ETL pipeline to support incremental loading of the sales.csv data. 
+Requirements: 
+• Implement a mechanism to detect new or updated sales records based on the 
+transaction_date. 
+• Ensure that the pipeline can handle both an initial full load and subsequent incremental 
+loads. 
+• Maintain a state (e.g., using a watermark) to track the last processed date. 
+• Log each run of the pipeline, including the number of records processed and any errors. 
+Deliverable: 
+- Provide the updated ETL script with incremental loading logic: incremental_pipeline.py
+- A sample log file: incremental_etl.log
+
+Part 4: Database Optimization and Query Performance 
+Objective: Design an optimized relational database schema and write efficient queries. 
+Requirements: 
+• Create the products, customers, and sales tables in your chosen relational database. 
+• Design a star schema for reporting, with sales as the fact table and products and 
+customers as dimension tables. 
+• Write and optimize the following queries: 
+1. Top 10 Products: List the top 10 products by total sales quantity. 
+2. Customer Purchase Trends: Identify customers who have made more than 5 
+purchases in the last 90 days. 
+3. Monthly Revenue Analysis: Calculate total monthly revenue for each product 
+category. 
+• Implement indexing strategies to improve query performance and provide the execution 
+plan for each query. 
+Deliverable: 
+- Submit the SQL scripts : Top 10 Products.sql , customer purchase trends.sql , monthly revenue analysis.sql 
+- Index creation statements : index creation statement.sql
+- Execution plans : executionplans_customepurchasetrends.txt, executionplans_monthlyrevenueanalysis.txt, executionplans_top10products.txt
+
+Part 5: Error Handling and Validation 
+Objective: Ensure robustness and reliability of your ETL pipeline. 
+Requirements: 
+• Add validation checks to your ETL process to detect and handle: 
+o Missing or null values in critical fields (e.g., product_id, customer_id). 
+o Invalid data types (e.g., text in numeric fields). 
+o Referential integrity issues (e.g., sales records with non-existent product_id or 
+customer_id). 
+• Implement error handling and logging for the entire ETL process, capturing any anomalies 
+detected. 
+Deliverable: 
+- Provide the enhanced ETL script with validation checks, error handling: etl_pipeline_with_validations.py
+- A sample error log :  etl_error_log.log
+
+Part 6: Mock API Integration 
+Objective: Extend your ETL pipeline to include data from an external API. 
+Requirements: 
+• Use a publicly available mock API (e.g., MockAPI, JSONPlaceholder) to fetch additional 
+product details. 
+• Assume the API returns product metadata with the following structure: 
+o product_id (string) 
+o description (string) 
+o rating (decimal, 0-5) 
+o availability_status (string, e.g., "In Stock", "Out of Stock") 
+• Fetch data for all products using the API, handle pagination if needed. 
+• Enrich the products.csv data with the additional metadata from the API. 
+• Handle potential API issues, such as timeouts, rate limits, and missing data fields. 
+Deliverable: 
+- Provide the updated ETL script with API integration and error handling: etl_pipeline_api_extended.api
+- Sample error log : etl_log.log
+- Along with a brief explanation of how you handled API-related challenges:
+
+Undefined Dependencies:
+Issue: In the initial implementation, the requests library was not imported, causing the script to fail during API calls.
+Solution: The requests library was imported and added to the requirements.txt file to ensure proper dependency management.
+
+Data Type Mismatches:
+Issue: The product_id column in the API data was of type string, while in the products.csv dataset, it was numeric. This mismatch led to failed merges.
+Solution: Both columns were standardized by converting product_id to string in the products.csv dataset and id from the API response to match.
+API Pagination and Timeouts:
+
+Issue: The API returned data in pages, and the script needed to handle pagination while being robust to potential timeouts.
+Solution: Implemented a loop to fetch all pages from the API with error handling for timeouts and maximum retries.
+
+Missing Metadata:
+Issue: Many product_id values in products.csv were not found in the API metadata, leaving enriched fields empty.
+Solution: Logged mismatched IDs for debugging and filled missing metadata fields with default values ("No description available", 0.0 for rating, "Unknown" for availability status).
+
+Merge Conflicts:
+Issue: Duplicates or inconsistencies in merging the API data with products.csv caused enriched fields to contain unexpected results.
+Solution: Ensured unique keys for merging by dropping duplicates and normalizing the product_id fields before merging.
+
+Part 7: Complex Data Transformation and Enrichment Task 
+Objective: Perform advanced data transformations and enrich your dataset with derived and 
+calculated features. 
+Requirements: 
+1. Data Transformation: 
+o Create a new column total_sales_value in the sales dataset by calculating quantity * 
+price (ensure you join sales.csv with products.csv to get the price). 
+o Derive a new column purchase_month from the transaction_date column, 
+formatted as "YYYY-MM". 
+o Standardize the category column in products.csv to ensure consistent naming (e.g., 
+"electronics", "Electronics", "ELECTRONICS" should all map to "Electronics"). 
+o Split the name column in customers.csv into two separate columns: first_name and 
+last_name. 
+2. Data Enrichment: 
+o Enrich the customers.csv dataset by categorizing customers based on their 
+purchase history: 
+▪ "Frequent Buyer": Customers with more than 10 transactions. 
+▪ "Occasional Buyer": Customers with 5-10 transactions. 
+▪ "Rare Buyer": Customers with less than 5 transactions. 
+o For each product, add a new column popularity_score, calculated as 
+(total_sales_quantity / max(total_sales_quantity)) * 100, where total_sales_quantity 
+is the sum of all quantities sold for that product. 
+o Merge additional product metadata from the mock API (e.g., rating and 
+availability_status) and add new columns to the products.csv dataset. 
+3. Handling Edge Cases: 
+o Handle scenarios where price is missing or non-numeric (e.g., use the average price 
+of the same category as a fallback). 
+o Address potential duplicate customer records by merging based on email and 
+prioritizing the latest entry. 
+Deliverable: 
+• Submit your data transformation script along with a brief explanation of your approach : 
+etl_data_enrichment.py 
+SEE Brief_explanation.txt for the brief explanation on the approach
+• Provide a sample output of the enriched and transformed datasets (products.csv, 
+customers.csv, sales.csv) : data_transformation.log, sales_transformed.csv, products_transformed.csv, customers_transformed.csv

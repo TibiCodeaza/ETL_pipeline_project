@@ -1,0 +1,327 @@
+2024-12-24 12:22:47,347 - INFO - ETL process started.
+2024-12-24 12:22:47,355 - INFO - Data extracted successfully.
+2024-12-24 12:22:47,355 - INFO - Cleaning products data.
+2024-12-24 12:22:47,355 - INFO - Filled 15 missing product names with 'Unknown'.
+2024-12-24 12:22:47,355 - INFO - Normalized inconsistent categories: [nan 'InvalidCategory'] to 'Other'.
+2024-12-24 12:22:47,355 - INFO - Replaced 3 invalid or negative prices with 0.
+2024-12-24 12:22:47,355 - INFO - Cleaning customers data.
+2024-12-24 12:22:47,355 - INFO - Removed 60 duplicate customer records.
+2024-12-24 12:22:47,355 - INFO - Filled 119 missing countries with 'Unknown'.
+2024-12-24 12:22:47,361 - INFO - Replaced 55 invalid email addresses with 'invalid@example.com'.
+2024-12-24 12:22:47,361 - INFO - Cleaning sales data.
+2024-12-24 12:22:47,363 - INFO - Filled 810 missing product_ids with -1.
+2024-12-24 12:22:47,363 - INFO - Filled 772 missing customer_ids with -1.
+2024-12-24 12:22:47,760 - INFO - Replaced 98 invalid transaction dates with '2000-01-01'.
+2024-12-24 12:22:47,760 - INFO - Replaced 107 invalid or negative quantities with 1.
+2024-12-24 12:22:47,760 - INFO - Data cleaned and transformed successfully.
+2024-12-24 12:22:47,760 - INFO - Loading data into products table.
+2024-12-24 12:22:47,832 - ERROR - Error loading data into the database: (psycopg2.OperationalError) connection to server at "localhost" (::1), port 5432 failed: fe_sendauth: no password supplied
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2024-12-24 12:31:10,443 - INFO - ETL process started.
+2024-12-24 12:31:10,450 - INFO - Data extracted successfully.
+2024-12-24 12:31:10,450 - INFO - Cleaning products data.
+2024-12-24 12:31:10,450 - INFO - Filled 15 missing product names with 'Unknown'.
+2024-12-24 12:31:10,450 - INFO - Normalized inconsistent categories: [nan 'InvalidCategory'] to 'Other'.
+2024-12-24 12:31:10,450 - INFO - Replaced 3 invalid or negative prices with 0.
+2024-12-24 12:31:10,450 - INFO - Cleaning customers data.
+2024-12-24 12:31:10,450 - INFO - Removed 60 duplicate customer records.
+2024-12-24 12:31:10,450 - INFO - Filled 119 missing countries with 'Unknown'.
+2024-12-24 12:31:10,455 - INFO - Replaced 55 invalid email addresses with 'invalid@example.com'.
+2024-12-24 12:31:10,455 - INFO - Cleaning sales data.
+2024-12-24 12:31:10,457 - INFO - Filled 810 missing product_ids with -1.
+2024-12-24 12:31:10,457 - INFO - Filled 772 missing customer_ids with -1.
+2024-12-24 12:31:10,817 - INFO - Replaced 98 invalid transaction dates with '2000-01-01'.
+2024-12-24 12:31:10,817 - INFO - Replaced 107 invalid or negative quantities with 1.
+2024-12-24 12:31:10,817 - INFO - Data cleaned and transformed successfully.
+2024-12-24 12:31:10,817 - INFO - Loading data into products table.
+2024-12-24 12:31:10,857 - ERROR - Error loading data into the database: (psycopg2.OperationalError) connection to server at "localhost" (::1), port 5432 failed: FATAL:  password authentication failed for user "default_user"
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2024-12-24 12:33:35,941 - INFO - ETL process started.
+2024-12-24 12:33:35,941 - INFO - Data extracted successfully.
+2024-12-24 12:33:35,941 - INFO - Cleaning products data.
+2024-12-24 12:33:35,941 - INFO - Filled 15 missing product names with 'Unknown'.
+2024-12-24 12:33:35,941 - INFO - Normalized inconsistent categories: [nan 'InvalidCategory'] to 'Other'.
+2024-12-24 12:33:35,941 - INFO - Replaced 3 invalid or negative prices with 0.
+2024-12-24 12:33:35,941 - INFO - Cleaning customers data.
+2024-12-24 12:33:35,941 - INFO - Removed 60 duplicate customer records.
+2024-12-24 12:33:35,950 - INFO - Filled 119 missing countries with 'Unknown'.
+2024-12-24 12:33:35,950 - INFO - Replaced 55 invalid email addresses with 'invalid@example.com'.
+2024-12-24 12:33:35,950 - INFO - Cleaning sales data.
+2024-12-24 12:33:35,950 - INFO - Filled 810 missing product_ids with -1.
+2024-12-24 12:33:35,950 - INFO - Filled 772 missing customer_ids with -1.
+2024-12-24 12:33:36,307 - INFO - Replaced 98 invalid transaction dates with '2000-01-01'.
+2024-12-24 12:33:36,307 - INFO - Replaced 107 invalid or negative quantities with 1.
+2024-12-24 12:33:36,307 - INFO - Data cleaned and transformed successfully.
+2024-12-24 12:33:36,307 - INFO - Loading data into products table.
+2024-12-24 12:33:36,338 - ERROR - Error loading data into the database: (psycopg2.OperationalError) connection to server at "localhost" (::1), port 5432 failed: FATAL:  password authentication failed for user "None"
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2024-12-24 12:34:45,971 - INFO - ETL process started.
+2024-12-24 12:34:45,981 - INFO - Data extracted successfully.
+2024-12-24 12:34:45,981 - INFO - Cleaning products data.
+2024-12-24 12:34:45,981 - INFO - Filled 15 missing product names with 'Unknown'.
+2024-12-24 12:34:45,981 - INFO - Normalized inconsistent categories: [nan 'InvalidCategory'] to 'Other'.
+2024-12-24 12:34:45,984 - INFO - Replaced 3 invalid or negative prices with 0.
+2024-12-24 12:34:45,984 - INFO - Cleaning customers data.
+2024-12-24 12:34:45,984 - INFO - Removed 60 duplicate customer records.
+2024-12-24 12:34:45,986 - INFO - Filled 119 missing countries with 'Unknown'.
+2024-12-24 12:34:45,986 - INFO - Replaced 55 invalid email addresses with 'invalid@example.com'.
+2024-12-24 12:34:45,986 - INFO - Cleaning sales data.
+2024-12-24 12:34:45,986 - INFO - Filled 810 missing product_ids with -1.
+2024-12-24 12:34:45,986 - INFO - Filled 772 missing customer_ids with -1.
+2024-12-24 12:34:46,378 - INFO - Replaced 98 invalid transaction dates with '2000-01-01'.
+2024-12-24 12:34:46,378 - INFO - Replaced 107 invalid or negative quantities with 1.
+2024-12-24 12:34:46,378 - INFO - Data cleaned and transformed successfully.
+2024-12-24 12:34:46,378 - INFO - Loading data into products table.
+2024-12-24 12:34:46,410 - ERROR - Error loading data into the database: (psycopg2.OperationalError) connection to server at "localhost" (::1), port 5432 failed: FATAL:  password authentication failed for user "None"
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2024-12-24 12:37:56,615 - INFO - ETL process started.
+2024-12-24 12:37:56,626 - INFO - Data extracted successfully.
+2024-12-24 12:37:56,626 - INFO - Cleaning products data.
+2024-12-24 12:37:56,626 - INFO - Filled 15 missing product names with 'Unknown'.
+2024-12-24 12:37:56,626 - INFO - Normalized inconsistent categories: [nan 'InvalidCategory'] to 'Other'.
+2024-12-24 12:37:56,626 - INFO - Replaced 3 invalid or negative prices with 0.
+2024-12-24 12:37:56,626 - INFO - Cleaning customers data.
+2024-12-24 12:37:56,626 - INFO - Removed 60 duplicate customer records.
+2024-12-24 12:37:56,626 - INFO - Filled 119 missing countries with 'Unknown'.
+2024-12-24 12:37:56,626 - INFO - Replaced 55 invalid email addresses with 'invalid@example.com'.
+2024-12-24 12:37:56,626 - INFO - Cleaning sales data.
+2024-12-24 12:37:56,626 - INFO - Filled 810 missing product_ids with -1.
+2024-12-24 12:37:56,626 - INFO - Filled 772 missing customer_ids with -1.
+2024-12-24 12:37:56,985 - INFO - Replaced 98 invalid transaction dates with '2000-01-01'.
+2024-12-24 12:37:56,985 - INFO - Replaced 107 invalid or negative quantities with 1.
+2024-12-24 12:37:56,985 - INFO - Data cleaned and transformed successfully.
+2024-12-24 12:37:56,985 - INFO - Loading data into products table.
+2024-12-24 12:37:57,018 - ERROR - Error loading data into the database: (psycopg2.OperationalError) connection to server at "localhost" (::1), port 5432 failed: FATAL:  password authentication failed for user "None"
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2024-12-24 12:39:06,103 - INFO - ETL process started.
+2024-12-24 12:39:06,112 - INFO - Data extracted successfully.
+2024-12-24 12:39:06,112 - INFO - Cleaning products data.
+2024-12-24 12:39:06,112 - INFO - Filled 15 missing product names with 'Unknown'.
+2024-12-24 12:39:06,112 - INFO - Normalized inconsistent categories: [nan 'InvalidCategory'] to 'Other'.
+2024-12-24 12:39:06,112 - INFO - Replaced 3 invalid or negative prices with 0.
+2024-12-24 12:39:06,112 - INFO - Cleaning customers data.
+2024-12-24 12:39:06,118 - INFO - Removed 60 duplicate customer records.
+2024-12-24 12:39:06,119 - INFO - Filled 119 missing countries with 'Unknown'.
+2024-12-24 12:39:06,120 - INFO - Replaced 55 invalid email addresses with 'invalid@example.com'.
+2024-12-24 12:39:06,120 - INFO - Cleaning sales data.
+2024-12-24 12:39:06,120 - INFO - Filled 810 missing product_ids with -1.
+2024-12-24 12:39:06,120 - INFO - Filled 772 missing customer_ids with -1.
+2024-12-24 12:39:06,489 - INFO - Replaced 98 invalid transaction dates with '2000-01-01'.
+2024-12-24 12:39:06,489 - INFO - Replaced 107 invalid or negative quantities with 1.
+2024-12-24 12:39:06,489 - INFO - Data cleaned and transformed successfully.
+2024-12-24 12:39:06,489 - INFO - Loading data into products table.
+2024-12-24 12:39:06,522 - ERROR - Error loading data into the database: (psycopg2.OperationalError) connection to server at "localhost" (::1), port 5432 failed: FATAL:  password authentication failed for user "None"
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2024-12-24 12:40:44,519 - INFO - ETL process started.
+2024-12-24 12:40:44,525 - INFO - Data extracted successfully.
+2024-12-24 12:40:44,527 - INFO - Cleaning products data.
+2024-12-24 12:40:44,527 - INFO - Filled 15 missing product names with 'Unknown'.
+2024-12-24 12:40:44,527 - INFO - Normalized inconsistent categories: [nan 'InvalidCategory'] to 'Other'.
+2024-12-24 12:40:44,529 - INFO - Replaced 3 invalid or negative prices with 0.
+2024-12-24 12:40:44,529 - INFO - Cleaning customers data.
+2024-12-24 12:40:44,529 - INFO - Removed 60 duplicate customer records.
+2024-12-24 12:40:44,529 - INFO - Filled 119 missing countries with 'Unknown'.
+2024-12-24 12:40:44,529 - INFO - Replaced 55 invalid email addresses with 'invalid@example.com'.
+2024-12-24 12:40:44,529 - INFO - Cleaning sales data.
+2024-12-24 12:40:44,533 - INFO - Filled 810 missing product_ids with -1.
+2024-12-24 12:40:44,533 - INFO - Filled 772 missing customer_ids with -1.
+2024-12-24 12:40:44,915 - INFO - Replaced 98 invalid transaction dates with '2000-01-01'.
+2024-12-24 12:40:44,915 - INFO - Replaced 107 invalid or negative quantities with 1.
+2024-12-24 12:40:44,915 - INFO - Data cleaned and transformed successfully.
+2024-12-24 12:40:44,915 - INFO - Loading data into products table.
+2024-12-24 12:40:44,947 - ERROR - Error loading data into the database: (psycopg2.OperationalError) connection to server at "localhost" (::1), port 5432 failed: FATAL:  password authentication failed for user "None"
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2024-12-24 12:41:11,022 - INFO - ETL process started.
+2024-12-24 12:41:11,037 - INFO - Data extracted successfully.
+2024-12-24 12:41:11,037 - INFO - Cleaning products data.
+2024-12-24 12:41:11,037 - INFO - Filled 15 missing product names with 'Unknown'.
+2024-12-24 12:41:11,037 - INFO - Normalized inconsistent categories: [nan 'InvalidCategory'] to 'Other'.
+2024-12-24 12:41:11,037 - INFO - Replaced 3 invalid or negative prices with 0.
+2024-12-24 12:41:11,037 - INFO - Cleaning customers data.
+2024-12-24 12:41:11,037 - INFO - Removed 60 duplicate customer records.
+2024-12-24 12:41:11,037 - INFO - Filled 119 missing countries with 'Unknown'.
+2024-12-24 12:41:11,045 - INFO - Replaced 55 invalid email addresses with 'invalid@example.com'.
+2024-12-24 12:41:11,045 - INFO - Cleaning sales data.
+2024-12-24 12:41:11,046 - INFO - Filled 810 missing product_ids with -1.
+2024-12-24 12:41:11,046 - INFO - Filled 772 missing customer_ids with -1.
+2024-12-24 12:41:11,437 - INFO - Replaced 98 invalid transaction dates with '2000-01-01'.
+2024-12-24 12:41:11,437 - INFO - Replaced 107 invalid or negative quantities with 1.
+2024-12-24 12:41:11,437 - INFO - Data cleaned and transformed successfully.
+2024-12-24 12:41:11,437 - INFO - Loading data into products table.
+2024-12-24 12:41:11,467 - ERROR - Error loading data into the database: (psycopg2.OperationalError) connection to server at "localhost" (::1), port 5432 failed: FATAL:  password authentication failed for user "None"
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2024-12-24 12:42:03,160 - INFO - ETL process started.
+2024-12-24 12:42:03,192 - INFO - Data extracted successfully.
+2024-12-24 12:42:03,192 - INFO - Cleaning products data.
+2024-12-24 12:42:03,192 - INFO - Filled 11 missing product names with 'Unknown'.
+2024-12-24 12:42:03,192 - INFO - Normalized inconsistent categories: ['InvalidCategory' nan] to 'Other'.
+2024-12-24 12:42:03,192 - INFO - Replaced 4 invalid or negative prices with 0.
+2024-12-24 12:42:03,192 - INFO - Cleaning customers data.
+2024-12-24 12:42:03,192 - INFO - Removed 60 duplicate customer records.
+2024-12-24 12:42:03,192 - INFO - Filled 129 missing countries with 'Unknown'.
+2024-12-24 12:42:03,199 - INFO - Replaced 65 invalid email addresses with 'invalid@example.com'.
+2024-12-24 12:42:03,199 - INFO - Cleaning sales data.
+2024-12-24 12:42:03,200 - INFO - Filled 826 missing product_ids with -1.
+2024-12-24 12:42:03,200 - INFO - Filled 777 missing customer_ids with -1.
+2024-12-24 12:42:03,581 - INFO - Replaced 96 invalid transaction dates with '2000-01-01'.
+2024-12-24 12:42:03,582 - INFO - Replaced 96 invalid or negative quantities with 1.
+2024-12-24 12:42:03,582 - INFO - Data cleaned and transformed successfully.
+2024-12-24 12:42:03,582 - INFO - Loading data into products table.
+2024-12-24 12:42:03,601 - INFO - Data loaded into products successfully.
+2024-12-24 12:42:03,601 - INFO - Loading data into customers table.
+2024-12-24 12:42:03,617 - INFO - Data loaded into customers successfully.
+2024-12-24 12:42:03,617 - INFO - Loading data into sales table.
+2024-12-24 12:42:03,642 - INFO - Data loaded into sales successfully.
+2024-12-24 12:42:03,642 - INFO - Data loaded into the database successfully.
+2024-12-24 12:42:03,642 - INFO - ETL process completed successfully.
+2024-12-24 12:42:46,413 - INFO - ETL process started.
+2024-12-24 12:42:46,430 - INFO - Data extracted successfully.
+2024-12-24 12:42:46,430 - INFO - Cleaning products data.
+2024-12-24 12:42:46,430 - INFO - Filled 11 missing product names with 'Unknown'.
+2024-12-24 12:42:46,430 - INFO - Normalized inconsistent categories: ['InvalidCategory' nan] to 'Other'.
+2024-12-24 12:42:46,430 - INFO - Replaced 4 invalid or negative prices with 0.
+2024-12-24 12:42:46,430 - INFO - Cleaning customers data.
+2024-12-24 12:42:46,430 - INFO - Removed 60 duplicate customer records.
+2024-12-24 12:42:46,430 - INFO - Filled 129 missing countries with 'Unknown'.
+2024-12-24 12:42:46,439 - INFO - Replaced 65 invalid email addresses with 'invalid@example.com'.
+2024-12-24 12:42:46,439 - INFO - Cleaning sales data.
+2024-12-24 12:42:46,439 - INFO - Filled 826 missing product_ids with -1.
+2024-12-24 12:42:46,439 - INFO - Filled 777 missing customer_ids with -1.
+2024-12-24 12:42:46,862 - INFO - Replaced 96 invalid transaction dates with '2000-01-01'.
+2024-12-24 12:42:46,862 - INFO - Replaced 96 invalid or negative quantities with 1.
+2024-12-24 12:42:46,862 - INFO - Data cleaned and transformed successfully.
+2024-12-24 12:42:46,863 - INFO - Loading data into products table.
+2024-12-24 12:42:46,928 - INFO - Data loaded into products successfully.
+2024-12-24 12:42:46,928 - INFO - Loading data into customers table.
+2024-12-24 12:42:46,952 - INFO - Data loaded into customers successfully.
+2024-12-24 12:42:46,952 - INFO - Loading data into sales table.
+2024-12-24 12:42:46,995 - INFO - Data loaded into sales successfully.
+2024-12-24 12:42:46,995 - INFO - Data loaded into the database successfully.
+2024-12-24 12:42:46,995 - INFO - ETL process completed successfully.
+2024-12-24 12:43:02,234 - INFO - ETL process started.
+2024-12-24 12:43:02,234 - INFO - Data extracted successfully.
+2024-12-24 12:43:02,234 - INFO - Cleaning products data.
+2024-12-24 12:43:02,234 - INFO - Filled 11 missing product names with 'Unknown'.
+2024-12-24 12:43:02,234 - INFO - Normalized inconsistent categories: ['InvalidCategory' nan] to 'Other'.
+2024-12-24 12:43:02,249 - INFO - Replaced 4 invalid or negative prices with 0.
+2024-12-24 12:43:02,249 - INFO - Cleaning customers data.
+2024-12-24 12:43:02,249 - INFO - Removed 60 duplicate customer records.
+2024-12-24 12:43:02,249 - INFO - Filled 129 missing countries with 'Unknown'.
+2024-12-24 12:43:02,249 - INFO - Replaced 65 invalid email addresses with 'invalid@example.com'.
+2024-12-24 12:43:02,249 - INFO - Cleaning sales data.
+2024-12-24 12:43:02,249 - INFO - Filled 826 missing product_ids with -1.
+2024-12-24 12:43:02,249 - INFO - Filled 777 missing customer_ids with -1.
+2024-12-24 12:43:02,643 - INFO - Replaced 96 invalid transaction dates with '2000-01-01'.
+2024-12-24 12:43:02,643 - INFO - Replaced 96 invalid or negative quantities with 1.
+2024-12-24 12:43:02,644 - INFO - Data cleaned and transformed successfully.
+2024-12-24 12:43:02,644 - INFO - Loading data into products table.
+2024-12-24 12:43:02,733 - INFO - Data loaded into products successfully.
+2024-12-24 12:43:02,733 - INFO - Loading data into customers table.
+2024-12-24 12:43:02,761 - INFO - Data loaded into customers successfully.
+2024-12-24 12:43:02,761 - INFO - Loading data into sales table.
+2024-12-24 12:43:02,808 - INFO - Data loaded into sales successfully.
+2024-12-24 12:43:02,808 - INFO - Data loaded into the database successfully.
+2024-12-24 12:43:02,808 - INFO - ETL process completed successfully.
+2024-12-24 12:48:51,363 - INFO - ETL process started.
+2024-12-24 12:48:51,379 - INFO - Data extracted successfully.
+2024-12-24 12:48:51,379 - INFO - Cleaning products data.
+2024-12-24 12:48:51,379 - INFO - Filled 11 missing product names with 'Unknown'.
+2024-12-24 12:48:51,380 - INFO - Normalized inconsistent categories: ['InvalidCategory' nan] to 'Other'.
+2024-12-24 12:48:51,380 - INFO - Replaced 4 invalid or negative prices with 0.
+2024-12-24 12:48:51,380 - INFO - Cleaning customers data.
+2024-12-24 12:48:51,380 - INFO - Removed 60 duplicate customer records.
+2024-12-24 12:48:51,380 - INFO - Filled 129 missing countries with 'Unknown'.
+2024-12-24 12:48:51,380 - INFO - Replaced 65 invalid email addresses with 'invalid@example.com'.
+2024-12-24 12:48:51,380 - INFO - Cleaning sales data.
+2024-12-24 12:48:51,380 - INFO - Filled 826 missing product_ids with -1.
+2024-12-24 12:48:51,380 - INFO - Filled 777 missing customer_ids with -1.
+2024-12-24 12:48:51,759 - INFO - Replaced 96 invalid transaction dates with '2000-01-01'.
+2024-12-24 12:48:51,759 - INFO - Replaced 96 invalid or negative quantities with 1.
+2024-12-24 12:48:51,759 - INFO - Data cleaned and transformed successfully.
+2024-12-24 12:48:51,759 - INFO - Loading data into products table.
+2024-12-24 12:48:51,865 - INFO - Data loaded into products successfully.
+2024-12-24 12:48:51,865 - INFO - Loading data into customers table.
+2024-12-24 12:48:51,891 - INFO - Data loaded into customers successfully.
+2024-12-24 12:48:51,891 - INFO - Loading data into sales table.
+2024-12-24 12:48:51,929 - INFO - Data loaded into sales successfully.
+2024-12-24 12:48:51,929 - INFO - Data loaded into the database successfully.
+2024-12-24 12:48:51,929 - INFO - ETL process completed successfully.
+2024-12-24 13:32:24,757 - INFO - ETL process started.
+2024-12-24 13:32:24,763 - INFO - Data extracted successfully.
+2024-12-24 13:32:24,763 - INFO - Cleaning products data.
+2024-12-24 13:32:24,763 - INFO - Filled 11 missing product names with 'Unknown'.
+2024-12-24 13:32:24,763 - INFO - Normalized inconsistent categories: ['InvalidCategory' nan] to 'Other'.
+2024-12-24 13:32:24,763 - INFO - Replaced 4 invalid or negative prices with 0.
+2024-12-24 13:32:24,763 - INFO - Cleaning customers data.
+2024-12-24 13:32:24,763 - INFO - Removed 60 duplicate customer records.
+2024-12-24 13:32:24,763 - INFO - Filled 129 missing countries with 'Unknown'.
+2024-12-24 13:32:24,771 - INFO - Replaced 65 invalid email addresses with 'invalid@example.com'.
+2024-12-24 13:32:24,771 - INFO - Cleaning sales data.
+2024-12-24 13:32:24,772 - INFO - Filled 826 missing product_ids with -1.
+2024-12-24 13:32:24,772 - INFO - Filled 777 missing customer_ids with -1.
+2024-12-24 13:32:25,191 - INFO - Replaced 96 invalid transaction dates with '2000-01-01'.
+2024-12-24 13:32:25,191 - INFO - Replaced 96 invalid or negative quantities with 1.
+2024-12-24 13:32:25,191 - INFO - Data cleaned and transformed successfully.
+2024-12-24 13:32:25,191 - INFO - Loading data into products table.
+2024-12-24 13:32:25,297 - INFO - Data loaded into products successfully.
+2024-12-24 13:32:25,297 - INFO - Loading data into customers table.
+2024-12-24 13:32:25,325 - INFO - Data loaded into customers successfully.
+2024-12-24 13:32:25,325 - INFO - Loading data into sales table.
+2024-12-24 13:32:25,355 - INFO - Data loaded into sales successfully.
+2024-12-24 13:32:25,355 - INFO - Data loaded into the database successfully.
+2024-12-24 13:32:25,355 - INFO - ETL process completed successfully.
+2024-12-24 13:33:48,672 - INFO - ETL process started.
+2024-12-24 13:33:48,681 - INFO - Data extracted successfully.
+2024-12-24 13:33:48,681 - INFO - Cleaning products data.
+2024-12-24 13:33:48,681 - INFO - Filled 11 missing product names with 'Unknown'.
+2024-12-24 13:33:48,681 - INFO - Normalized inconsistent categories: ['InvalidCategory' nan] to 'Other'.
+2024-12-24 13:33:48,681 - INFO - Replaced 4 invalid or negative prices with 0.
+2024-12-24 13:33:48,681 - INFO - Cleaning customers data.
+2024-12-24 13:33:48,681 - INFO - Removed 60 duplicate customer records.
+2024-12-24 13:33:48,681 - INFO - Filled 129 missing countries with 'Unknown'.
+2024-12-24 13:33:48,686 - INFO - Replaced 65 invalid email addresses with 'invalid@example.com'.
+2024-12-24 13:33:48,686 - INFO - Cleaning sales data.
+2024-12-24 13:33:48,687 - INFO - Filled 826 missing product_ids with -1.
+2024-12-24 13:33:48,687 - INFO - Filled 777 missing customer_ids with -1.
+2024-12-24 13:33:48,687 - INFO - Replaced 96 invalid transaction dates with '2000-01-01'.
+2024-12-24 13:33:48,687 - INFO - Replaced 96 invalid or negative quantities with 1.
+2024-12-24 13:33:48,687 - INFO - Data cleaned and transformed successfully.
+2024-12-24 13:33:48,687 - INFO - Loading data into products table.
+2024-12-24 13:33:48,894 - INFO - Data loaded into products successfully.
+2024-12-24 13:33:48,896 - INFO - Loading data into customers table.
+2024-12-24 13:33:48,922 - INFO - Data loaded into customers successfully.
+2024-12-24 13:33:48,922 - INFO - Loading data into sales table.
+2024-12-24 13:33:48,971 - INFO - Data loaded into sales successfully.
+2024-12-24 13:33:48,971 - INFO - Data loaded into the database successfully.
+2024-12-24 13:33:48,973 - INFO - ETL process completed successfully.
+2024-12-24 13:41:23,204 - INFO - ETL process started.
+2024-12-24 13:41:23,204 - INFO - Data extracted successfully.
+2024-12-24 13:41:23,204 - INFO - Cleaning products data.
+2024-12-24 13:41:23,204 - INFO - Filled 11 missing product names with 'Unknown'.
+2024-12-24 13:41:23,204 - INFO - Normalized inconsistent categories: ['InvalidCategory' nan] to 'Other'.
+2024-12-24 13:41:23,204 - INFO - Replaced 4 invalid or negative prices with 0.
+2024-12-24 13:41:23,204 - INFO - Cleaning customers data.
+2024-12-24 13:41:23,204 - INFO - Removed 60 duplicate customer records.
+2024-12-24 13:41:23,204 - INFO - Filled 129 missing countries with 'Unknown'.
+2024-12-24 13:41:23,217 - INFO - Replaced 65 invalid email addresses with 'invalid@example.com'.
+2024-12-24 13:41:23,217 - INFO - Filled 826 missing product_ids with -1.
+2024-12-24 13:41:23,217 - INFO - Filled 777 missing customer_ids with -1.
+2024-12-24 13:41:23,221 - INFO - Replaced 96 invalid transaction dates with '2000-01-01'.
+2024-12-24 13:41:23,221 - INFO - Replaced 96 invalid or negative quantities with 1.
+2024-12-24 13:41:23,221 - INFO - Data cleaned and transformed successfully.
+2024-12-24 13:41:23,221 - INFO - Loading data into products table.
+2024-12-24 13:41:23,327 - INFO - Data loaded into products successfully.
+2024-12-24 13:41:23,327 - INFO - Loading data into customers table.
+2024-12-24 13:41:23,353 - INFO - Data loaded into customers successfully.
+2024-12-24 13:41:23,353 - INFO - Loading data into sales table.
+2024-12-24 13:41:23,399 - INFO - Data loaded into sales successfully.
+2024-12-24 13:41:23,399 - INFO - Data loaded into the database successfully.
+2024-12-24 13:41:23,399 - INFO - ETL process completed successfully.

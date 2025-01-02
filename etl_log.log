@@ -1,0 +1,122 @@
+2024-12-27 18:19:04,138 - INFO - ETL process started.
+2024-12-27 18:19:04,144 - INFO - Products DataFrame Sample:
+   product_id product_name     category price
+0           1       ground  Electronics  -100
+1           2      teacher        Books   484
+2           3          one  Electronics   213
+3           4          NaN         Food   248
+4           5      compare  Electronics   374
+2024-12-27 18:19:04,145 - ERROR - Error during products data ETL process: name 'requests' is not defined
+2024-12-27 18:19:04,145 - INFO - ETL process completed.
+2024-12-27 18:24:14,461 - INFO - ETL process started.
+2024-12-27 18:24:14,468 - INFO - Products DataFrame Sample:
+   product_id product_name     category price
+0           1       ground  Electronics  -100
+1           2      teacher        Books   484
+2           3          one  Electronics   213
+3           4          NaN         Food   248
+4           5      compare  Electronics   374
+2024-12-27 18:24:28,593 - INFO - ETL process started.
+2024-12-27 18:24:28,601 - INFO - Products DataFrame Sample:
+   product_id product_name     category price
+0           1       ground  Electronics  -100
+1           2      teacher        Books   484
+2           3          one  Electronics   213
+3           4          NaN         Food   248
+4           5      compare  Electronics   374
+2024-12-27 18:24:30,516 - INFO - Metadata DataFrame Sample:
+    product_id_api                                        description  rating availability_status id
+0     Bedfordshire  The automobile layout consists of a front-engi...       6           Northeast  1
+1     Bedfordshire  The Football Is Good For Training And Recreati...       2              recall  2
+2   Cambridgeshire  New ABC 13 9370, 13.3, 5th Gen CoreA5-8250U, 8...       8              Direct  3
+3   Cambridgeshire  The Apollotech B340 is an affordable wireless ...       2              second  4
+4  Buckinghamshire  New range of formal shirts are designed keepin...       3          withdrawal  5
+2024-12-27 18:24:30,516 - INFO - Product IDs missing in metadata_df: {'85', '78', '23', '26', '125', '139', '133', '142', '60', '134', '34', '33', '52', '84', '94', '121', '74', '25', '59', '82', '42', '97', '99', '58', '80', '119', '116', '132', '83', '63', '31', '127', '124', '32', '46', '50', '106', '100', '114', '66', '117', '44', '76', '65', '129', '47', '138', '62', '93', '24', '146', '41', '81', '39', '88', '104', '135', '36', '120', '53', '101', '110', '147', '126', '40', '128', '61', '98', '72', '68', '37', '86', '150', '71', '54', '103', '55', '70', '148', '123', '143', '38', '69', '30', '75', '49', '79', '111', '28', '92', '122', '35', '45', '51', '130', '145', '113', '112', '27', '43', '149', '73', '89', '131', '118', '87', '64', '91', '141', '137', '102', '56', '105', '140', '29', '90', '108', '48', '115', '77', '96', '136', '144', '57', '22', '67', '107', '95', '109'}
+2024-12-27 18:24:30,517 - INFO - Product IDs missing in products_df: set()
+2024-12-27 18:24:30,523 - INFO - Enriched DataFrame Sample After Merge:
+  product_id product_name     category price                                        description  rating availability_status
+0          1       ground  Electronics  -100  The automobile layout consists of a front-engi...     6.0           Northeast
+1          1       ground  Electronics  -100  The automobile layout consists of a front-engi...     6.0           Northeast
+2          1       ground  Electronics  -100  The automobile layout consists of a front-engi...     6.0           Northeast
+3          1       ground  Electronics  -100  The automobile layout consists of a front-engi...     6.0           Northeast
+4          1       ground  Electronics  -100  The automobile layout consists of a front-engi...     6.0           Northeast
+2024-12-27 18:24:30,624 - INFO - Inserted data into products table successfully.
+2024-12-27 18:24:30,624 - INFO - ETL process completed.
+2024-12-27 18:27:12,017 - INFO - ETL process started.
+2024-12-27 18:27:12,026 - INFO - Products DataFrame Sample:
+   product_id product_name     category price
+0           1       ground  Electronics  -100
+1           2      teacher        Books   484
+2           3          one  Electronics   213
+3           4          NaN         Food   248
+4           5      compare  Electronics   374
+2024-12-27 18:27:14,182 - INFO - Metadata DataFrame Sample:
+    product_id_api                                        description  rating availability_status id
+0     Bedfordshire  The automobile layout consists of a front-engi...       6           Northeast  1
+1     Bedfordshire  The Football Is Good For Training And Recreati...       2              recall  2
+2   Cambridgeshire  New ABC 13 9370, 13.3, 5th Gen CoreA5-8250U, 8...       8              Direct  3
+3   Cambridgeshire  The Apollotech B340 is an affordable wireless ...       2              second  4
+4  Buckinghamshire  New range of formal shirts are designed keepin...       3          withdrawal  5
+2024-12-27 18:27:14,183 - INFO - Product IDs missing in metadata_df: {'59', '145', '111', '133', '27', '39', '72', '86', '101', '107', '90', '123', '150', '140', '114', '137', '66', '85', '92', '31', '143', '142', '65', '121', '30', '55', '136', '57', '119', '41', '58', '78', '91', '147', '43', '103', '112', '115', '33', '73', '102', '71', '42', '89', '98', '109', '132', '38', '146', '87', '50', '35', '29', '100', '24', '60', '106', '88', '113', '54', '47', '129', '138', '63', '64', '40', '116', '82', '125', '53', '120', '84', '22', '25', '52', '108', '110', '104', '68', '126', '128', '97', '56', '75', '127', '141', '74', '135', '51', '105', '77', '144', '49', '76', '93', '117', '81', '62', '80', '28', '45', '94', '48', '36', '122', '69', '34', '99', '67', '130', '46', '139', '79', '44', '134', '96', '118', '95', '148', '149', '70', '32', '131', '37', '61', '26', '83', '23', '124'}
+2024-12-27 18:27:14,183 - INFO - Product IDs missing in products_df: set()
+2024-12-27 18:27:14,192 - INFO - Enriched DataFrame Sample After Merge:
+  product_id product_name     category  ...                                        description rating availability_status
+0          1       ground  Electronics  ...  The automobile layout consists of a front-engi...    6.0           Northeast
+1          1       ground  Electronics  ...  The automobile layout consists of a front-engi...    6.0           Northeast
+2          1       ground  Electronics  ...  The automobile layout consists of a front-engi...    6.0           Northeast
+3          1       ground  Electronics  ...  The automobile layout consists of a front-engi...    6.0           Northeast
+4          1       ground  Electronics  ...  The automobile layout consists of a front-engi...    6.0           Northeast
+
+[5 rows x 8 columns]
+2024-12-27 18:27:14,434 - INFO - Inserted data into products table successfully.
+2024-12-27 18:27:14,434 - INFO - ETL process completed.
+2024-12-27 19:50:28,417 - INFO - ETL process started.
+2024-12-27 19:50:28,425 - INFO - Products DataFrame Sample:
+   product_id product_name     category price
+0           1       ground  Electronics  -100
+1           2      teacher        Books   484
+2           3          one  Electronics   213
+3           4          NaN         Food   248
+4           5      compare  Electronics   374
+2024-12-27 19:50:30,541 - INFO - Metadata DataFrame Sample:
+    product_id_api                                        description  rating availability_status id
+0     Bedfordshire  The automobile layout consists of a front-engi...       6           Northeast  1
+1     Bedfordshire  The Football Is Good For Training And Recreati...       2              recall  2
+2   Cambridgeshire  New ABC 13 9370, 13.3, 5th Gen CoreA5-8250U, 8...       8              Direct  3
+3   Cambridgeshire  The Apollotech B340 is an affordable wireless ...       2              second  4
+4  Buckinghamshire  New range of formal shirts are designed keepin...       3          withdrawal  5
+2024-12-27 19:50:30,542 - INFO - Product IDs missing in metadata_df: {'95', '70', '144', '90', '97', '88', '23', '127', '92', '129', '150', '32', '57', '75', '25', '62', '94', '22', '135', '41', '130', '66', '106', '46', '67', '145', '38', '147', '54', '28', '44', '78', '114', '71', '68', '100', '24', '133', '55', '30', '37', '56', '74', '104', '48', '45', '51', '126', '42', '64', '79', '91', '116', '115', '84', '143', '80', '142', '72', '123', '110', '87', '102', '29', '36', '134', '101', '141', '40', '122', '93', '105', '113', '83', '61', '63', '149', '69', '96', '52', '82', '49', '128', '53', '124', '86', '43', '117', '112', '73', '27', '31', '136', '132', '146', '107', '33', '58', '47', '131', '39', '148', '119', '59', '26', '103', '85', '120', '98', '121', '109', '60', '65', '76', '111', '77', '108', '140', '81', '139', '35', '50', '118', '138', '34', '89', '99', '137', '125'}
+2024-12-27 19:50:30,543 - INFO - Product IDs missing in products_df: set()
+2024-12-27 19:50:30,550 - INFO - Enriched DataFrame Sample After Merge:
+  product_id product_name     category price product_id_api                                        description  rating availability_status
+0          1       ground  Electronics  -100   Bedfordshire  The automobile layout consists of a front-engi...     6.0           Northeast
+1          1       ground  Electronics  -100   Bedfordshire  The automobile layout consists of a front-engi...     6.0           Northeast
+2          1       ground  Electronics  -100   Bedfordshire  The automobile layout consists of a front-engi...     6.0           Northeast
+3          1       ground  Electronics  -100   Bedfordshire  The automobile layout consists of a front-engi...     6.0           Northeast
+4          1       ground  Electronics  -100   Bedfordshire  The automobile layout consists of a front-engi...     6.0           Northeast
+2024-12-27 19:50:30,653 - INFO - Inserted data into products table successfully.
+2024-12-27 19:50:30,653 - INFO - ETL process completed.
+2024-12-28 00:41:21,913 - INFO - ETL process started.
+2024-12-28 00:41:23,931 - INFO - Metadata DataFrame Sample:
+    product_id_api                                        description  rating availability_status id
+0     Bedfordshire  The automobile layout consists of a front-engi...       6           Northeast  1
+1     Bedfordshire  The Football Is Good For Training And Recreati...       2              recall  2
+2   Cambridgeshire  New ABC 13 9370, 13.3, 5th Gen CoreA5-8250U, 8...       8              Direct  3
+3   Cambridgeshire  The Apollotech B340 is an affordable wireless ...       2              second  4
+4  Buckinghamshire  New range of formal shirts are designed keepin...       3          withdrawal  5
+2024-12-28 00:41:23,931 - INFO - Product IDs missing in metadata_df: {'144', '137', '37', '117', '72', '86', '70', '134', '96', '38', '139', '131', '26', '62', '145', '53', '106', '140', '122', '108', '119', '33', '35', '143', '49', '87', '113', '36', '29', '48', '59', '78', '58', '105', '41', '128', '44', '132', '76', '71', '34', '104', '142', '60', '40', '82', '39', '31', '130', '66', '68', '120', '147', '42', '52', '103', '97', '100', '121', '88', '30', '111', '125', '54', '27', '55', '32', '65', '135', '57', '114', '92', '98', '63', '75', '133', '91', '93', '84', '94', '109', '51', '83', '73', '99', '146', '45', '61', '129', '23', '118', '25', '115', '81', '67', '112', '77', '46', '141', '28', '90', '56', '116', '107', '89', '110', '138', '123', '127', '24', '69', '64', '79', '148', '74', '43', '126', '85', '150', '80', '124', '136', '102', '50', '22', '149', '47', '95', '101'}
+2024-12-28 00:41:23,931 - INFO - Product IDs missing in products_df: set()
+2024-12-28 00:41:23,947 - INFO - Enriched DataFrame Sample After Merge:
+  product_id product_name     category price product_id_api                                        description  rating availability_status
+0          1       ground  Electronics  -100   Bedfordshire  The automobile layout consists of a front-engi...     6.0           Northeast
+1          1       ground  Electronics  -100   Bedfordshire  The automobile layout consists of a front-engi...     6.0           Northeast
+2          1       ground  Electronics  -100   Bedfordshire  The automobile layout consists of a front-engi...     6.0           Northeast
+3          1       ground  Electronics  -100   Bedfordshire  The automobile layout consists of a front-engi...     6.0           Northeast
+4          1       ground  Electronics  -100   Bedfordshire  The automobile layout consists of a front-engi...     6.0           Northeast
+2024-12-28 00:41:23,947 - INFO - Standardized category names in products data.
+2024-12-28 00:41:24,132 - INFO - Loaded DataFrame into table 'products_transformed'.
+2024-12-28 00:41:24,132 - ERROR - Error transforming sales data: You are trying to merge on float64 and object columns for key 'product_id'. If you wish to proceed you should use pd.concat
+2024-12-28 00:41:24,209 - INFO - Loaded DataFrame into table 'sales_transformed'.
+2024-12-28 00:41:24,209 - ERROR - Error transforming customers data: StringMethods.split() takes from 1 to 2 positional arguments but 3 positional arguments (and 1 keyword-only argument) were given
+2024-12-28 00:41:24,256 - INFO - Loaded DataFrame into table 'customers_transformed'.
+2024-12-28 00:41:24,256 - INFO - ETL process completed successfully.

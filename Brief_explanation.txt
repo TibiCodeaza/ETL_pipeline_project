@@ -1,0 +1,41 @@
+The provided ETL pipeline is designed to address complex data transformation and enrichment requirements by integrating external metadata and processing multiple datasets (e.g., products, sales, customers). Here is the approach broken down by major steps:
+
+Steps in Data Enrichment
+Metadata Fetching:
+
+Objective: Enrich products.csv with additional information from an external API.
+Implementation:
+A loop fetches paginated metadata from the API.
+Handles connection timeouts and retries gracefully.
+Converts fetched data into a Pandas DataFrame.
+Normalizes column names (product_id to product_id_api) to prevent conflicts.
+Data Integration:
+
+Objective: Merge API metadata into products.csv.
+Implementation:
+Ensures consistent data types (product_id as a string across all datasets).
+Uses a left join to preserve all records from products.csv.
+Default values (description: "No description available", rating: 0.0, availability_status: "Unknown") are applied to missing API records.
+Logs missing product IDs for debugging purposes.
+Product Popularity Calculation:
+
+Objective: Add a derived column, popularity_score, to products.csv.
+Implementation:
+Calculates total_sales_quantity by aggregating sales.csv.
+Normalizes product sales to a 0-100 scale using:
+python
+Copy code
+popularity_score = (total_sales_quantity / max(total_sales_quantity)) * 100
+Customer Categorization:
+
+Objective: Enrich customers.csv with purchase history categories (Frequent, Occasional, Rare).
+Implementation:
+Uses transaction counts from sales.csv to classify customers.
+Splits the name column into first_name and last_name.
+Handling Missing and Incorrect Data:
+
+Objective: Ensure robust handling of incomplete or erroneous data.
+Implementation:
+Replaces missing prices with the category average.
+Converts negative prices to positive values using .abs().
+Deduplicates customer records based on email, prioritizing the latest entry.

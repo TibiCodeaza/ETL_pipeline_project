@@ -1,0 +1,125 @@
+2024-12-24 13:24:00,592 - INFO - Incremental ETL process started.
+2024-12-24 13:24:00,623 - ERROR - Error creating watermark table: Not an executable object: '\n                CREATE TABLE IF NOT EXISTS etl_state (\n                    id SERIAL PRIMARY KEY,\n                    last_processed_date DATE\n                );\n            '
+2024-12-24 13:24:00,630 - ERROR - Error processing sales data: time data "InvalidDate" doesn't match format "%Y-%m-%d", at position 24. You might want to try:
+    - passing `format` if your strings have a consistent format;
+    - passing `format='ISO8601'` if your strings are all ISO8601 but not necessarily in exactly the same format;
+    - passing `format='mixed'`, and the format will be inferred for each element individually. You might want to use `dayfirst` alongside this.
+2024-12-24 13:24:00,631 - INFO - Incremental ETL process completed.
+2024-12-24 13:24:37,775 - INFO - Incremental ETL process started.
+2024-12-24 13:24:37,809 - ERROR - Error creating watermark table: Not an executable object: '\n                CREATE TABLE IF NOT EXISTS etl_state (\n                    id SERIAL PRIMARY KEY,\n                    last_processed_date DATE\n                );\n            '
+2024-12-24 13:24:37,809 - ERROR - Error processing sales data: time data "InvalidDate" doesn't match format "%Y-%m-%d", at position 24. You might want to try:
+    - passing `format` if your strings have a consistent format;
+    - passing `format='ISO8601'` if your strings are all ISO8601 but not necessarily in exactly the same format;
+    - passing `format='mixed'`, and the format will be inferred for each element individually. You might want to use `dayfirst` alongside this.
+2024-12-24 13:24:37,809 - INFO - Incremental ETL process completed.
+2024-12-24 13:25:21,097 - INFO - Incremental ETL process started.
+2024-12-24 13:25:21,132 - ERROR - Error creating watermark table: Not an executable object: '\n                CREATE TABLE IF NOT EXISTS etl_state (\n                    id SERIAL PRIMARY KEY,\n                    last_processed_date DATE\n                );\n            '
+2024-12-24 13:25:21,137 - ERROR - Error processing sales data: time data "InvalidDate" doesn't match format "%Y-%m-%d", at position 24. You might want to try:
+    - passing `format` if your strings have a consistent format;
+    - passing `format='ISO8601'` if your strings are all ISO8601 but not necessarily in exactly the same format;
+    - passing `format='mixed'`, and the format will be inferred for each element individually. You might want to use `dayfirst` alongside this.
+2024-12-24 13:25:21,137 - INFO - Incremental ETL process completed.
+2024-12-24 13:25:56,757 - INFO - Incremental ETL process started.
+2024-12-24 13:25:56,789 - ERROR - Error creating watermark table: Not an executable object: '\n                CREATE TABLE IF NOT EXISTS etl_state (\n                    id SERIAL PRIMARY KEY,\n                    last_processed_date DATE\n                );\n            '
+2024-12-24 13:25:56,795 - ERROR - Error processing sales data: time data "InvalidDate" doesn't match format "%Y-%m-%d", at position 24. You might want to try:
+    - passing `format` if your strings have a consistent format;
+    - passing `format='ISO8601'` if your strings are all ISO8601 but not necessarily in exactly the same format;
+    - passing `format='mixed'`, and the format will be inferred for each element individually. You might want to use `dayfirst` alongside this.
+2024-12-24 13:25:56,795 - INFO - Incremental ETL process completed.
+2024-12-24 13:26:56,235 - INFO - Incremental ETL process started.
+2024-12-24 13:26:56,275 - INFO - Watermark table 'etl_state' created or already exists.
+2024-12-24 13:26:56,281 - ERROR - Error processing sales data: time data "InvalidDate" doesn't match format "%Y-%m-%d", at position 24. You might want to try:
+    - passing `format` if your strings have a consistent format;
+    - passing `format='ISO8601'` if your strings are all ISO8601 but not necessarily in exactly the same format;
+    - passing `format='mixed'`, and the format will be inferred for each element individually. You might want to use `dayfirst` alongside this.
+2024-12-24 13:26:56,281 - INFO - Incremental ETL process completed.
+2024-12-24 13:32:55,197 - INFO - Incremental ETL process started.
+2024-12-24 13:32:55,243 - INFO - Watermark table 'etl_state' created or already exists.
+2024-12-24 13:32:55,245 - ERROR - Error processing sales data: time data "InvalidDate" doesn't match format "%Y-%m-%d", at position 24. You might want to try:
+    - passing `format` if your strings have a consistent format;
+    - passing `format='ISO8601'` if your strings are all ISO8601 but not necessarily in exactly the same format;
+    - passing `format='mixed'`, and the format will be inferred for each element individually. You might want to use `dayfirst` alongside this.
+2024-12-24 13:32:55,245 - INFO - Incremental ETL process completed.
+2024-12-24 13:33:52,430 - INFO - Incremental ETL process started.
+2024-12-24 13:33:52,468 - INFO - Watermark table 'etl_state' created or already exists.
+2024-12-24 13:33:52,476 - ERROR - Error processing sales data: time data "InvalidDate" doesn't match format "%Y-%m-%d", at position 24. You might want to try:
+    - passing `format` if your strings have a consistent format;
+    - passing `format='ISO8601'` if your strings are all ISO8601 but not necessarily in exactly the same format;
+    - passing `format='mixed'`, and the format will be inferred for each element individually. You might want to use `dayfirst` alongside this.
+2024-12-24 13:33:52,476 - INFO - Incremental ETL process completed.
+2024-12-24 13:41:35,033 - INFO - Incremental ETL process started.
+2024-12-24 13:41:35,083 - INFO - Watermark table 'etl_state' created or already exists.
+2024-12-24 13:41:35,090 - ERROR - Error processing sales data: time data "InvalidDate" doesn't match format "%Y-%m-%d", at position 24. You might want to try:
+    - passing `format` if your strings have a consistent format;
+    - passing `format='ISO8601'` if your strings are all ISO8601 but not necessarily in exactly the same format;
+    - passing `format='mixed'`, and the format will be inferred for each element individually. You might want to use `dayfirst` alongside this.
+2024-12-24 13:41:35,090 - INFO - Incremental ETL process completed.
+2024-12-24 20:42:19,543 - INFO - Incremental ETL process started.
+2024-12-24 20:42:19,584 - INFO - Watermark table 'etl_state' created or already exists.
+2024-12-24 20:42:19,593 - WARNING - Found 96 invalid dates. Dropping these rows.
+2024-12-24 20:42:19,595 - ERROR - Error retrieving last processed date: Not an executable object: 'SELECT last_processed_date FROM etl_state LIMIT 1;'
+2024-12-24 20:42:19,595 - INFO - Last processed date: None
+2024-12-24 20:42:19,626 - INFO - Inserted 1404 records into 'sales' table.
+2024-12-24 20:42:19,626 - ERROR - Error updating last processed date: (psycopg2.errors.UndefinedTable) relation "etl_state" does not exist
+LINE 2:                 INSERT INTO etl_state (id, last_processed_da...
+                                    ^
+
+[SQL: 
+                INSERT INTO etl_state (id, last_processed_date)
+                VALUES (1, '2024-12-23')
+                ON CONFLICT (id) DO UPDATE SET last_processed_date = '2024-12-23';
+            ]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2024-12-24 20:42:19,626 - INFO - Incremental ETL process completed.
+2024-12-24 20:43:36,144 - INFO - Incremental ETL process started.
+2024-12-24 20:43:36,178 - INFO - Watermark table 'etl_state' created or already exists.
+2024-12-24 20:43:36,194 - WARNING - Found 96 invalid dates. Dropping these rows.
+2024-12-24 20:43:36,194 - ERROR - Error retrieving last processed date: Not an executable object: 'SELECT last_processed_date FROM etl_state LIMIT 1;'
+2024-12-24 20:43:36,194 - INFO - Last processed date: None
+2024-12-24 20:43:36,233 - INFO - Inserted 1404 records into 'sales' table.
+2024-12-24 20:43:36,238 - ERROR - Error updating last processed date: (psycopg2.errors.UndefinedTable) relation "etl_state" does not exist
+LINE 2:                 INSERT INTO etl_state (id, last_processed_da...
+                                    ^
+
+[SQL: 
+                INSERT INTO etl_state (id, last_processed_date)
+                VALUES (1, '2024-12-23')
+                ON CONFLICT (id) DO UPDATE SET last_processed_date = '2024-12-23';
+            ]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2024-12-24 20:43:36,238 - INFO - Incremental ETL process completed.
+2024-12-24 20:44:25,115 - INFO - Incremental ETL process started.
+2024-12-24 20:44:25,161 - INFO - Watermark table 'etl_state' created or already exists.
+2024-12-24 20:44:25,172 - WARNING - Found 96 invalid dates. Dropping these rows.
+2024-12-24 20:44:25,173 - ERROR - Error retrieving last processed date: (psycopg2.errors.UndefinedTable) relation "etl_state" does not exist
+LINE 1: SELECT last_processed_date FROM etl_state LIMIT 1;
+                                        ^
+
+[SQL: SELECT last_processed_date FROM etl_state LIMIT 1;]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2024-12-24 20:44:25,173 - INFO - Last processed date: None
+2024-12-24 20:44:25,222 - INFO - Inserted 1404 records into 'sales' table.
+2024-12-24 20:44:25,222 - ERROR - Error updating last processed date: (psycopg2.errors.UndefinedTable) relation "etl_state" does not exist
+LINE 2:                 INSERT INTO etl_state (id, last_processed_da...
+                                    ^
+
+[SQL: 
+                INSERT INTO etl_state (id, last_processed_date)
+                VALUES (1, '2024-12-23')
+                ON CONFLICT (id) DO UPDATE SET last_processed_date = '2024-12-23';
+            ]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2024-12-24 20:44:25,222 - INFO - Incremental ETL process completed.
+2024-12-24 20:45:37,761 - INFO - Incremental ETL process started.
+2024-12-24 20:45:37,801 - INFO - Watermark table 'etl_state' created or already exists.
+2024-12-24 20:45:37,806 - ERROR - Watermark table 'etl_state' does not exist.
+2024-12-24 20:46:36,494 - INFO - Incremental ETL process started.
+2024-12-24 20:46:36,538 - INFO - Watermark table 'etl_state' created or already exists.
+2024-12-24 20:46:36,542 - INFO - Watermark table 'etl_state' verified successfully.
+2024-12-24 20:46:36,591 - INFO - Updated last processed date to 2024-12-23.
+2024-12-24 20:46:36,591 - INFO - Incremental ETL process completed.
+2024-12-24 20:48:53,070 - INFO - Incremental ETL process started.
+2024-12-24 20:48:53,105 - INFO - Watermark table 'etl_state' created or already exists.
+2024-12-24 20:48:53,107 - INFO - Watermark table 'etl_state' verified successfully.
+2024-12-24 20:48:53,154 - INFO - Updated last processed date to 2024-12-23.
+2024-12-24 20:48:53,155 - INFO - Incremental ETL process completed.

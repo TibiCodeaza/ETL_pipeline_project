@@ -1,0 +1,3 @@
+ALTER TABLE sales
+ADD COLUMN price NUMERIC(10, 2),
+ADD COLUMN revenue NUMERIC(10, 2);
